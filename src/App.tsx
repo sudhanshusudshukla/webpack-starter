@@ -6,7 +6,9 @@ import image2 from "./image_logo.svg";
 const App = () => {
   return (
     <>
-      <H1>hello react</H1>
+      <H1>
+        hello react {process.env.API_ROOT} {process.env.NODE_ENV}
+      </H1>
       <img src={image} alt="react logo" width={200} height={200} />
       <img src={image2} alt="react logo" width={200} height={200} />
     </>
