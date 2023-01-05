@@ -1,9 +1,14 @@
 const webpack = require("webpack");
 const dotenv = require("dotenv-webpack");
+const ReactRefreshWebpackPlugin = require("@pmmmwh/react-refresh-webpack-plugin");
 
 module.exports = {
   mode: "development",
   devtool: "cheap-module-source-map",
+  devServer: {
+    hot: true,
+    open: true,
+  },
   plugins: [
     new dotenv({
       path: "./.env", // load this now instead of the ones in '.env'
@@ -14,6 +19,7 @@ module.exports = {
       defaults: false, // load '.env.defaults' as the default values if empty.
       //prefix: "import.meta.env.", // reference your env variables as 'import.meta.env.ENV_VAR'.
     }),
+    new ReactRefreshWebpackPlugin(),
     new webpack.DefinePlugin({}),
     // new webpack.ProvidePlugin({
     //   process: "process/browser",
