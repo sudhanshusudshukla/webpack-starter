@@ -1,10 +1,10 @@
-import React, { useState } from "react";
-import { H1 } from "./App.styled";
-import image from "./image_react.png";
-import image2 from "./image_logo.svg";
+import React, { useState } from 'react'
+import { H1 } from './App.styled'
+import image from './image_react.png'
+import image2 from './image_logo.svg'
 
 const App = () => {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(0)
   return (
     <>
       <H1>
@@ -16,7 +16,7 @@ const App = () => {
         onClick={() => setCount(count + 1)}
       >{`click me: ${count}`}</button>
     </>
-  );
-};
+  )
+}
 
-export default App;
+export default App
