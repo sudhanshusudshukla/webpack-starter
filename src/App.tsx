@@ -4,6 +4,7 @@ import image from './image_react.png'
 import image2 from './image_logo.svg'
 
 const App = () => {
+  const name = 'sudhanshu'
   const [count, setCount] = useState(0)
   return (
     <>
