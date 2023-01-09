@@ -5,6 +5,7 @@ import image2 from './image_logo.svg'
 
 const App = () => {
   const [count, setCount] = useState(0)
+  let a
   return (
     <>
       <H1>
